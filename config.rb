@@ -36,9 +36,9 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -69,4 +69,13 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  deploy.remote   = 'origin' # remote name or git url, default: origin
+  deploy.branch   = 'master' # default: gh-pages
+  deploy.strategy = :force_push      # commit strategy: can be :force_push or :submodule, default: :force_push
+  # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
