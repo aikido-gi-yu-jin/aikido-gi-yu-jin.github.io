@@ -13,6 +13,7 @@ Built using [Middleman](https://middlemanapp.com/)
 To get started...
 
 ```
+gem install bundler
 gem install middleman
 bundle install
 middleman server
