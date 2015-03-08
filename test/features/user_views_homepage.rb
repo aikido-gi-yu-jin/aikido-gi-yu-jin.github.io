@@ -29,6 +29,11 @@ class UserVisitsHomepage < AcceptanceTest
     assert has_css?("#aikido_feature"), "Aikido feature should be rendered"
   end
 
+  def test_shows_suitable_for_all_feature
+    on_homepage
+    assert has_css?("#suitable_for_all_feature"), "Aikido is suitable for all feature should be rendered"
+  end
+
   def test_shows_demos_feature
     on_homepage
     assert has_css?("#demos_feature"), "Demos feature should be rendered"

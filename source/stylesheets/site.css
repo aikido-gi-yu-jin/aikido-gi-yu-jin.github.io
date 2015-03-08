@@ -51,21 +51,15 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
-}
-
-.carousel-inner > .item {
-  text-align: center;
-  position: relative;
-  height: 500px;
+  background-color: #444;
 }
 
 .carousel-hero {
-  width: 1000px;
+  width: 1059px;
   height: 500px;
   position: absolute;
   left: 50%;
-  margin-left: -500px;
+  margin-left: -529px;
 }
 
 /* MARKETING CONTENT

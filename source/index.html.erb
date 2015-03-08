@@ -16,13 +16,23 @@ title: Home
 
 <hr class="featurette-divider">
 
-<div id="demos_feature" class="row featurette">
+<div id="suitable_for_all_feature" class="row featurette">
   <div class="col-md-5">
-    <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/stuart_at_bb.jpg" data-holder-rendered="true">
+    <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/andy_and_marie.jpg" data-holder-rendered="true">
   </div>
   <div class="col-md-7">
-    <h2 class="featurette-heading">Demonstrations.<span class="text-muted">See for yourself.</span></h2>
-    <p class="lead">We can come to see you.</p>
+    <%= partial "sections/suitable_for_all_feature" %>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div id="demos_feature" class="row featurette">
+  <div class="col-md-5">
+    <%= partial "sections/demos_feature" %>
+  </div>
+  <div class="col-md-7">
+    <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/stuart_at_bb.jpg" data-holder-rendered="true">
   </div>
 </div>
 <hr class="featurette-divider">
