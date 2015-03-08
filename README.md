@@ -21,5 +21,7 @@ middleman server
 
 Sources are in ```/source``` and the site is compiled to ```/build```.
 
-Please make changes on the ```authors``` branch.  Deploy by running ```middleman deploy```.  This will build the pages and force push ```/build``` to the ```master``` branch.
+Please make changes on the ```authors``` branch.
+
+Deploy by running ```middleman deploy```.  This builds the site and force pushes ```/build``` to the ```master``` branch.
 
