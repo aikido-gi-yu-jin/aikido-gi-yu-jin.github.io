@@ -52,15 +52,20 @@ body {
   height: 500px;
   background-color: #777;
 }
-.carousel-inner > .item > img {
-  margin: 0 auto;
-  /*position: absolute;*/
-/*  top: 0;
-  left: 0;
-*/  /*min-width: 100%;*/
-/*  width: 600px;
+
+.carousel-inner > .item {
+  text-align: center;
+  position: relative;
   height: 500px;
-*/}
+}
+
+.carousel-inner > .item > img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 500px;
+  margin-left: -50%;
+}
 
 
 /* MARKETING CONTENT
