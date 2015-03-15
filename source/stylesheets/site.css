@@ -107,6 +107,10 @@ p.lead {
   margin: 0;
 }
 
+p.lead.above {
+  margin-bottom: 20px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
