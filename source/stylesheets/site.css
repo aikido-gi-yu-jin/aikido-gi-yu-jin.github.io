@@ -87,13 +87,25 @@ body {
   margin: 20px 0; /* Tight by default */
 }
 
+.featurette-divider.last {
+  margin: 10px; /* Tight by default */
+}
+
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  margin-top: 0;
 }
 
+.featurette-heading.below {
+  margin-top: 20px;
+}
+
+p.lead {
+  margin: 0;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
