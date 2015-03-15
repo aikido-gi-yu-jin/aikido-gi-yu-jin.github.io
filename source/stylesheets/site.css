@@ -55,12 +55,13 @@ body {
 }
 
 .carousel-hero {
-  width: 1059px;
+  width: 911px;
   height: 500px;
   position: absolute;
   left: 50%;
-  margin-left: -529px;
+  margin-left: -455px;
 }
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
