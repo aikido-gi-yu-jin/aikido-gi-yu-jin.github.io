@@ -79,6 +79,12 @@ body {
   margin-left: 10px;
 }
 
+.featurette img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* Featurettes
 ------------------------- */
