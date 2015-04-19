@@ -48,6 +48,12 @@ body {
   z-index: 10;
 }
 
+.carousel-caption h2 {
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
@@ -61,7 +67,6 @@ body {
   left: 50%;
   margin-left: -455px;
 }
-
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
