@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tachnique Randomiser</title>
+    <script src="https://fb.me/react-0.13.3.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Randomiser</h1>
+      </div>
+      <div class="row">
+        <div id="randomiser"></div>
+      </div>
+    </div>
+
+    <script type="text/jsx">
+      var Randomiser = React.createClass({
+        getInitialState: function(){
+          return { currentTechnique: this.props.initialTechnique };
+        },
+        render: function() {
+          return (
+            <div>
+              <div className="row">
+                <button type="button" onClick={this.chooseRandomTechnique} className="btn btn-default">Go!</button>
+              </div>
+              <div className="row">
+                <h2>{this.nextTechnique()}</h2>
+              </div>
+            </div>
+          );
+        },
+        chooseRandomTechnique: function() {
+          var i = this.state.currentTechnique;
+          while( i == this.state.currentTechnique ) {
+            i = Math.floor((Math.random() * this.props.techniques.length));
+          }
+          this.setState({ currentTechnique: i })
+        },
+        nextTechnique: function() {
+          var t = this.state.currentTechnique;
+          return this.props.techniques[t];
+        }
+      });
+
+      React.render( <Randomiser techniques={[ "Ikkyo",
+                                              "Nikkyo",
+                                              "Sankyo",
+                                              "Yonkyo",
+                                              "Shihonange",
+                                              "Tenchinage",
+                                              "Kaitenage",
+                                              "Kokyunage",
+                                              "Kotagehi"]}
+                                initialTechnique={0} />, document.getElementById('randomiser') );
+    </script>
+  </body>
+</html>
