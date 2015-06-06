@@ -16,11 +16,28 @@ title: Home
 
 <hr class="featurette-divider">
 
-<div id="demos_feature" class="row featurette">
+<div id="typical_class_feature" class="row featurette">
   <div class="col-md-5">
-    <%= partial "sections/demos_feature" %>
+    <%= partial "sections/typical_class" %>
   </div>
   <div class="col-md-7">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe
+        class="embed-responsive-item"
+        src="http://www.youtube.com/embed/eGn0lMxNKpU?autoplay=0&origin=http://aikidoclubglasgow.com"
+        frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div id="demos_feature" class="row featurette">
+  <div class="col-md-7 col-md-push-5">
+    <%= partial "sections/demos_feature" %>
+  </div>
+  <div class="col-md-5 col-md-pull-7">
     <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="images/stuart_at_bb.jpg" data-holder-rendered="true">
   </div>
 </div>

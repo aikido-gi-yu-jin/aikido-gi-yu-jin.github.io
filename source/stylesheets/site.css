@@ -91,7 +91,6 @@ body {
   margin-right: auto;
 }
 
-
 /* Featurettes
 ------------------------- */
 
@@ -154,6 +153,7 @@ p.lead.above {
 
   .featurette-heading {
     font-size: 50px;
+    margin 0;
   }
 
   .featurette-divider {
@@ -162,21 +162,5 @@ p.lead.above {
 
   #suitable_for_all_feature .featurette-heading {
     margin-top: 0px;
-  }
-
-
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-
-  .featurette-heading {
-    margin-top: 120px;
-  }
-
-  #suitable_for_all_feature > div > h2 {
-    margin-top: 60px;
   }
 }
